@@ -1,0 +1,156 @@
+.hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Alexandria", sans-serif;
+  gap: 1.5rem;
+}
+
+.buttons-container {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  width: 100%;
+  font-family: "Alexandria", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  margin: 0;
+
+  width: 95%;
+}
+
+th {
+  /* background-color: aquamarine; */
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  /* width: 100%;
+   */
+  text-align: center;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+td {
+  /* background-color: antiquewhite; */
+  height: 3rem;
+
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.priority-cell {
+  height: 70%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.class-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+tr:hover {
+  transform: scale(102%);
+  transition: all 0.5s;
+}
+
+.add-modal-container {
+  height: 100%;
+  width: 100%;
+  font-family: "Alexandria", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.add-modal-container h1 {
+  color: black;
+  align-self: center;
+  margin-left: 33%;
+}
+
+.add-form {
+  height: 80%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background-color: antiquewhite;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.add-modal-container input {
+  height: 30px;
+  width: 45%;
+}
+
+.add-modal-container button {
+  height: 40px;
+  width: 30%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .filterContainer,
+  .buttons-container,
+  .add-modal-container,
+  table {
+    transform: scale(90%);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .filterContainer,
+  .buttons-container,
+  .add-modal-container,
+  table {
+    transform: scale(80%);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .filterContainer,
+  .buttons-container,
+  .add-modal-container,
+  table {
+    transform: scale(70%);
+  }
+}

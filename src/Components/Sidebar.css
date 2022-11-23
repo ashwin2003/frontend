@@ -1,0 +1,30 @@
+.sidebarContainer {
+  background-color: var(--primaryBlue);
+  min-width: 5%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+  height: 30%;
+  width: 100%;
+}
+
+.Home:hover,
+.Bell:hover,
+.Pager:hover,
+.Question:hover {
+  transform: scale(120%);
+  transition: ease 1s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .tabContainer {
+    /* background-color: antiquewhite; */
+  }
+}
